@@ -5,6 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definitions - Harmonium Journey</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .definitions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .def-card {
+            background: linear-gradient(135deg, #FFF8F0 0%, #F0F8F0 100%);
+            border-left: 5px solid #FF9933;
+            border-right: 2px solid #138808;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        
+        .def-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+        
+        .def-card h3 {
+            color: #FF6600;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #FFE0B2;
+            padding-bottom: 8px;
+        }
+        
+        .def-card .hindi {
+            color: #138808;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .def-card .english {
+            color: #555;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+        
+        .def-card .description {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .def-card .examples {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255, 153, 51, 0.1);
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        
+        .category-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #FFFBF5;
+            border-radius: 10px;
+            border-top: 4px solid #FF9933;
+        }
+        
+        .category-section h2 {
+            color: #FF6600;
+            margin-bottom: 20px;
+        }
+        
+        .instrument-types {
+            margin-top: 15px;
+        }
+        
+        .instrument-type {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid #138808;
+            border-radius: 6px;
+        }
+        
+        .instrument-type h4 {
+            color: #FF6600;
+            margin-bottom: 8px;
+        }
+        
+        .instrument-type .examples {
+            color: #138808;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,42 +107,146 @@
         <section class="content">
             <h2>Essential Music Theory Terms</h2>
             
-            <div class="definition">
-                <h3>Swar (स्वर)</h3>
-                <p>Musical note. The seven basic notes: Sa, Re, Ga, Ma, Pa, Dha, Ni.</p>
+            <!-- Basic Musical Concepts -->
+            <div class="definitions-grid">
+                <div class="def-card">
+                    <h3>Taal (ताल)</h3>
+                    <p class="hindi">kya hai</p>
+                    <p class="description">Measurement of music. Beats that organize musical time.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Beats</h3>
+                    <p class="description">संगीत को नापने - measurement. The rhythmic pulse in music used to measure time.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Saptak (सप्तक)</h3>
+                    <p class="description">7 सुरों का संगाम - मंदरा, मध्य, तार (Combination of 7 notes)</p>
+                    <div class="examples">
+                        <strong>Three Saptaks:</strong><br>
+                        • Mandra (Lower octave)<br>
+                        • Madhya (Middle octave)<br>
+                        • Taar (Upper octave)
+                    </div>
+                </div>
+
+                <div class="def-card">
+                    <h3>Sangeet (संगीत)</h3>
+                    <p class="hindi">kya hai</p>
+                    <p class="description">संगीत एक ऐसी सुप्रे ह जिसमें गायन, वादन, और नृत्य तीनों का समावेश होता है। इसे भावों को व्यक्त कर रखने को एक माध्यम माना जाता है, जहाँ कलाकार अपने भावों को गीत, लय और ताल के माध्यम से प्रस्तुत करते हैं।</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Raag (राग)</h3>
+                    <p class="hindi">kya hai</p>
+                    <p class="description">राग एक ऐसा संपूर्ण राग इकाई की मानर्ती शास्तुर में है। यह एक सुशिता हु, जो श्रुता और अनुभव रुप से विशिष्ट राग को समाप्त करते को कल्पकता है - swar samudaaye jo munn ko bhaata hai. A melodic framework with specific time and rules for composition and improvisation.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Avartan (आवर्तन)</h3>
+                    <p class="description">एक ताल का पूरा चक्कर है। Complete cycle of a taal.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Pakad (पकड़)</h3>
+                    <p class="hindi">kya hai</p>
+                    <p class="description">Raag ka pehchaan karan ka chota samooh. एक एम्बेडेड अम्सर है जो एक राग की शूरत को दर्शाता है। The characteristic phrase that identifies a raag.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Swar (स्वर)</h3>
+                    <p class="description">Musical note. The seven basic notes: Sa, Re, Ga, Ma, Pa, Dha, Ni.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Shruti (श्रुति)</h3>
+                    <p class="description">Microtonal intervals in Indian classical music. There are 22 shrutis in an octave.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Aroha (आरोह)</h3>
+                    <p class="description">Ascending scale of notes in a raag.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Avaroha (अवरोह)</h3>
+                    <p class="description">Descending scale of notes in a raag.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Vadi (वादी)</h3>
+                    <p class="description">The most prominent or king note of a raag.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Samvadi (संवादी)</h3>
+                    <p class="description">The second most important note, usually a fifth or fourth from Vadi.</p>
+                </div>
+
+                <div class="def-card">
+                    <h3>Alankar (अलंकार)</h3>
+                    <p class="description">ko ek aur definition palta hai - palta can have more variations - there are no dependency on sequencing. Musical exercises and ornamental patterns.</p>
+                </div>
             </div>
 
-            <div class="definition">
-                <h3>Shruti (श्रुति)</h3>
-                <p>Microtonal intervals in Indian classical music. There are 22 shrutis in an octave.</p>
+            <!-- Musical Instruments Classification -->
+            <div class="category-section">
+                <h2>वाद्ययंत्रों के मुख्य प्रकार (Main Types of Musical Instruments)</h2>
+                
+                <div class="instrument-types">
+                    <div class="instrument-type">
+                        <h4>तत् वाद्य (Tat Vaadya - String Instruments)</h4>
+                        <p>इन वाद्यों में तारों के कंपन से ध्वनि उत्पन्न होती है, जिन्हें उंगलियों या गज से बजाया जाता है।</p>
+                        <p class="description">String instruments that produce sound through vibrating strings played with fingers or bow.</p>
+                        <div class="examples">
+                            <strong>उदाहरण (Examples):</strong> सितार, वीणा, वायलिन, सरोद (Sitar, Veena, Violin, Sarod)
+                        </div>
+                    </div>
+
+                    <div class="instrument-type">
+                        <h4>अवनद्ध वाद्य / ताल वाद्य (Avanaddha Vaadya - Percussion Instruments)</h4>
+                        <p>इस श्रेणी में वे वाद्य आते हैं जिनमें किसी बर्तन या संरचना पर चमड़ा मढ़ा जाता है और उसे पीटकर ध्वनि उत्पन्न की जाती है।</p>
+                        <p class="description">Instruments where leather is stretched over a structure and sound is produced by striking.</p>
+                        <div class="examples">
+                            <strong>उदाहरण (Examples):</strong> ढोलक, तबला, मृदंगम (Dholak, Tabla, Mridangam)
+                        </div>
+                    </div>
+
+                    <div class="instrument-type">
+                        <h4>घन वाद्य (Ghana Vaadya - Solid Instruments)</h4>
+                        <p>ये ठोस वाद्य होते हैं जिन्हें आपस में टकराकर बजाया जाता है, जैसे कि लकड़ी, पत्थर, धातु या मिट्टी के वाद्य।</p>
+                        <p class="description">Solid instruments made of wood, stone, metal, or clay that are struck together.</p>
+                        <div class="examples">
+                            <strong>उदाहरण (Examples):</strong> मंजीरा, झांझा, घंटी (Manjira, Jhanjh, Ghanti)
+                        </div>
+                    </div>
+
+                    <div class="instrument-type">
+                        <h4>सुषिर वाद्य / वायु वाद्य (Sushir Vaadya - Wind Instruments)</h4>
+                        <p>इन वाद्यों में किसी नली में फूंक मारकर वायु के कंपन से ध्वनि पैदा की जाती है।</p>
+                        <p class="description">Wind instruments that produce sound by blowing air through a tube creating vibrations.</p>
+                        <div class="examples">
+                            <strong>उदाहरण (Examples):</strong> बांसुरी, शहनाई, तुरही (Bansuri, Shehnai, Turahi)
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="definition">
-                <h3>Saptak (सप्तक)</h3>
-                <p>Octave. Mandra (lower), Madhya (middle), and Taar (upper) saptaks.</p>
+            <!-- Template for adding new definitions -->
+            <div style="margin-top: 40px; padding: 20px; background: #FFF9E6; border: 2px dashed #FFB366; border-radius: 8px;">
+                <h3 style="color: #FF6600;">💡 To Add More Definitions:</h3>
+                <p>Copy the template below and add it to the definitions-grid:</p>
+                <pre style="background: white; padding: 15px; border-radius: 4px; overflow-x: auto;">
+&lt;div class="def-card"&gt;
+    &lt;h3&gt;Term Name (हिंदी)&lt;/h3&gt;
+    &lt;p class="hindi"&gt;hindi phrase&lt;/p&gt;
+    &lt;p class="description"&gt;Detailed explanation here...&lt;/p&gt;
+    &lt;div class="examples"&gt;
+        &lt;strong&gt;Examples:&lt;/strong&gt; Example 1, Example 2
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
             </div>
-
-            <div class="definition">
-                <h3>Aroha (आरोह)</h3>
-                <p>Ascending scale of notes in a raag.</p>
-            </div>
-
-            <div class="definition">
-                <h3>Avaroha (अवरोह)</h3>
-                <p>Descending scale of notes in a raag.</p>
-            </div>
-
-            <div class="definition">
-                <h3>Vadi (वादी)</h3>
-                <p>The most prominent or king note of a raag.</p>
-            </div>
-
-            <div class="definition">
-                <h3>Samvadi (संवादी)</h3>
-                <p>The second most important note, usually a fifth or fourth from Vadi.</p>
-            </div>
-
-            <p><em>Add more definitions as you learn...</em></p>
         </section>
 
         <footer>
