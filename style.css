@@ -188,6 +188,35 @@ pre {
     border-bottom: 2px solid rgba(255,255,255,0.5);
 }
 
+/* Disclaimer Section */
+.disclaimer {
+    background: #FFF9F0;
+    border: 2px solid #FFB366;
+    border-left: 6px solid #FF9933;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.disclaimer h2 {
+    color: #CC5500;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.disclaimer p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.disclaimer strong {
+    color: #FF6600;
+    font-weight: 600;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
