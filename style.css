@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Styles - Traditional Indian Music Theme */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +8,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #1a1a1a;
+    /* Indian tricolor inspired gradient - saffron to green through white */
+    background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+    background-attachment: fixed;
     min-height: 100vh;
     padding: 20px;
 }
@@ -17,55 +19,65 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-top: 5px solid #FF9933;
+    border-bottom: 5px solid #138808;
 }
 
 /* Header Styles */
 header {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 3px solid #e67e22;
+    border-bottom: 3px solid #FF9933;
     margin-bottom: 30px;
+    background: linear-gradient(90deg, #FF9933 0%, #138808 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 header h1 {
-    color: #2c3e50;
+    color: #FF6600;
     font-size: 2.5em;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .subtitle {
-    color: #7f8c8d;
+    color: #138808;
     font-size: 1.2em;
     font-style: italic;
+    font-weight: 500;
 }
 
 .back-link {
     display: inline-block;
     margin-top: 10px;
-    color: #e67e22;
+    color: #FF9933;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 .back-link:hover {
-    color: #d35400;
+    color: #138808;
+    border-bottom: 2px solid #138808;
 }
 
 /* Navigation Styles */
 .main-nav {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #FFF5E6 0%, #E8F5E9 100%);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
+    border-left: 5px solid #FF9933;
 }
 
 .main-nav h2 {
-    color: #2c3e50;
+    color: #FF6600;
     margin-bottom: 15px;
     font-size: 1.5em;
 }
@@ -79,19 +91,21 @@ header h1 {
 }
 
 .main-nav ul li a {
-    color: #e67e22;
+    color: #138808;
     text-decoration: none;
     font-size: 1.1em;
     padding: 8px 12px;
     display: block;
     border-left: 3px solid transparent;
     transition: all 0.3s;
+    font-weight: 500;
 }
 
 .main-nav ul li a:hover {
-    background: #fff;
-    border-left: 3px solid #e67e22;
+    background: rgba(255, 153, 51, 0.1);
+    border-left: 3px solid #FF9933;
     padding-left: 20px;
+    color: #FF6600;
 }
 
 /* Content Sections */
@@ -100,20 +114,20 @@ header h1 {
 }
 
 .content h2 {
-    color: #2c3e50;
+    color: #FF6600;
     margin-bottom: 15px;
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 3px solid #FF9933;
     padding-bottom: 10px;
 }
 
 .content h3 {
-    color: #34495e;
+    color: #138808;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 .content h4 {
-    color: #7f8c8d;
+    color: #FF9933;
     margin-top: 15px;
     margin-bottom: 8px;
 }
@@ -121,6 +135,7 @@ header h1 {
 .content p {
     margin-bottom: 15px;
     text-align: justify;
+    color: #2c2c2c;
 }
 
 .content ul {
@@ -134,38 +149,43 @@ header h1 {
 
 /* Special Content Blocks */
 .definition, .raag, .thaat, .taal, .alankaar, .song {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #FFF8F0 0%, #F0F8F0 100%);
     padding: 15px;
-    border-left: 4px solid #e67e22;
+    border-left: 5px solid #FF9933;
+    border-right: 2px solid #138808;
     margin: 20px 0;
     border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .definition h3, .raag h3, .thaat h3, .taal h3, .alankaar h4, .song h3 {
-    color: #e67e22;
+    color: #FF6600;
     margin-top: 0;
 }
 
 pre {
-    background: #ecf0f1;
+    background: #FFF5E6;
+    border: 1px solid #FFE0B2;
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
     margin: 10px 0;
+    color: #138808;
 }
 
 /* Intro Section */
 .intro {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
     color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .intro h2 {
     color: white;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.5);
 }
 
 /* Footer Styles */
@@ -173,17 +193,20 @@ footer {
     text-align: center;
     padding-top: 30px;
     margin-top: 40px;
-    border-top: 2px solid #ecf0f1;
-    color: #7f8c8d;
+    border-top: 3px solid #FF9933;
+    color: #138808;
 }
 
 footer a {
-    color: #e67e22;
+    color: #FF9933;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s;
 }
 
 footer a:hover {
+    color: #138808;
     text-decoration: underline;
 }
 
